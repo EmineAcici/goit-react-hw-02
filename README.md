@@ -1,16 +1,32 @@
-# React + Vite
+# Sip Happens Café - Feedback Widget
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and interactive feedback collection application built with React. This project demonstrates state management, side effects with LocalStorage, and conditional rendering.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Feedback Tracking:** Collects and displays counts for "Good", "Neutral", and "Bad" experiences.
+- **Real-time Statistics:** Automatically calculates the total number of feedbacks and the percentage of positive ratings.
+- **Conditional Rendering:** - Shows a friendly notification message when no feedback has been collected.
+  - Displays the statistics and a "Reset" button only after the first feedback is received.
+- **Persistent Data:** Uses `useEffect` and `localStorage` to ensure feedback data is preserved even after refreshing the page.
+- **Modular Component Architecture:** Clean separation of concerns between UI components.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React** (Scaffolded with Vite)
+- **Hooks:** `useState`, `useEffect`
+- **Styling:** CSS3 with BEM Methodology for scalable and maintainable styles.
 
-## Expanding the ESLint configuration
+## 📁 Component Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- `App`: The root component that manages state and handles business logic.
+- `Description`: Displays the café's name and instructions.
+- `Options`: Contains buttons to submit feedback and the "Reset" button.
+- `Feedback`: Lists the feedback counts and calculated statistics.
+- `Notification`: A fallback message displayed when there is no feedback data.
+
+## ⚙️ Installation & Setup
+
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/EmineAcici/goit-react-hw-02.git](https://github.com/EmineAcici/goit-react-hw-02.git)
