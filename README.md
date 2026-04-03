@@ -25,8 +25,3 @@ A simple and interactive feedback collection application built with React. This 
 - `Feedback`: Lists the feedback counts and calculated statistics.
 - `Notification`: A fallback message displayed when there is no feedback data.
 
-## ⚙️ Installation & Setup
-
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/EmineAcici/goit-react-hw-02.git](https://github.com/EmineAcici/goit-react-hw-02.git)
